@@ -1,0 +1,20 @@
+---
+title: "ggplot test"
+author: "Dustin Haraden"
+date: "January 31, 2019"
+output: html_document
+---
+
+```{r setup}
+library(tidyverse)
+```
+
+https://www.r-graph-gallery.com/222-discrete-color-palette-ggplot2/ 
+
+```{r}
+
+# default barplot
+ggplot(mtcars, aes(x=as.factor(cyl), fill=as.factor(cyl) )) +
+  geom_bar( )
+
+```
